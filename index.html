@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neurophysiology ม.6 | เว็บสรุปอ่านสอบ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="reading-progress" id="readingProgress"></div>
+
+  <header class="hero" id="top">
+    <nav class="topbar">
+      <a class="brand" href="#top" aria-label="กลับไปบนสุด">
+        <span class="brand-icon">🧠</span>
+        <span>Neurophysiology ม.6</span>
+      </a>
+      <div class="top-actions">
+        <button class="ghost-btn" id="expandAllBtn" type="button">เปิดสรุปทั้งหมด</button>
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="สลับโหมดสี">🌙</button>
+      </div>
+    </nav>
+
+    <div class="hero-grid">
+      <section class="hero-copy">
+        <p class="eyebrow">สรุปจากชีท Neurophysiology</p>
+        <h1>ระบบประสาท<br><span>เข้าใจเร็ว จำง่าย ก่อนสอบ</span></h1>
+        <p class="lead">
+          รวมเนื้อหาหลักเรื่องวิวัฒนาการระบบประสาท สมอง/ไขสันหลัง เนื้อเยื่อประสาท
+          ศักย์เยื่อเซลล์ Action Potential Synapse และสารสื่อประสาท ในรูปแบบเว็บอ่านง่าย
+        </p>
+        <div class="hero-buttons">
+          <a class="primary-btn" href="#quick-summary">เริ่มอ่านสรุป</a>
+          <a class="secondary-btn" href="#quiz">ทำแบบทดสอบ</a>
+        </div>
+      </section>
+
+      <aside class="brain-card" aria-label="แผนภาพการส่งข้อมูลประสาท">
+        <div class="pulse-ring"></div>
+        <div class="brain-emoji">🧠</div>
+        <div class="signal-line one"></div>
+        <div class="signal-line two"></div>
+        <div class="signal-line three"></div>
+        <div class="mini-flow">
+          <span>รับสิ่งเร้า</span>
+          <b>→</b>
+          <span>ประมวลผล</span>
+          <b>→</b>
+          <span>ตอบสนอง</span>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="tools-panel">
+      <div class="search-box">
+        <span>🔎</span>
+        <input id="searchInput" type="search" placeholder="ค้นหา เช่น Na+, Synapse, Schwann, Dopamine..." autocomplete="off" />
+      </div>
+      <div class="chip-row" aria-label="ลิงก์หัวข้อ">
+        <a href="#overview">ภาพรวม</a>
+        <a href="#tissue">เซลล์ประสาท</a>
+        <a href="#potential">Membrane Potential</a>
+        <a href="#ap">Action Potential</a>
+        <a href="#synapse">Synapse</a>
+        <a href="#neurotransmitter">สารสื่อประสาท</a>
+      </div>
+    </section>
+
+    <section class="section" id="quick-summary" data-search="สรุปเร็ว ระบบประสาท neurophysiology">
+      <div class="section-title">
+        <p>Quick Summary</p>
+        <h2>สรุปเร็ว 1 หน้า</h2>
+      </div>
+      <div class="summary-grid">
+        <article class="summary-card hot">
+          <h3>เส้นทางข้อมูลประสาท</h3>
+          <p><b>Receptor</b> รับสิ่งเร้า → <b>Afferent neuron</b> ส่งเข้า CNS → <b>CNS</b> ประมวลผล → <b>Efferent neuron</b> ส่งออก → <b>Effector</b> ตอบสนอง</p>
+        </article>
+        <article class="summary-card">
+          <h3>CNS vs PNS</h3>
+          <p><b>CNS</b> = สมอง + ไขสันหลัง ควบคุม/ประมวลผล ส่วน <b>PNS</b> = เส้นประสาทนอก CNS ทำหน้าที่รับเข้าและส่งออกคำสั่ง</p>
+        </article>
+        <article class="summary-card">
+          <h3>Resting Membrane Potential</h3>
+          <p>ขณะพักเซลล์ประสาทมีศักย์ประมาณ <b>-70 mV</b> ภายในลบกว่าภายนอก เพราะการกระจายไอออนและ Na+/K+ pump</p>
+        </article>
+        <article class="summary-card hot">
+          <h3>Action Potential</h3>
+          <p>ถึง threshold แล้วเกิดแบบ <b>All-or-none</b>: Na+ เข้า = depolarization, K+ ออก = repolarization, ต่ำกว่าปกติ = hyperpolarization</p>
+        </article>
+        <article class="summary-card">
+          <h3>Myelin สำคัญยังไง</h3>
+          <p>ปลอกไมอีลินทำให้กระแสประสาทกระโดดผ่าน <b>Nodes of Ranvier</b> เรียก saltatory conduction เร็วกว่าการนำแบบต่อเนื่อง</p>
+        </article>
+        <article class="summary-card">
+          <h3>Synapse</h3>
+          <p>จุดติดต่อระหว่างเซลล์ประสาท มีแบบไฟฟ้าใช้ gap junction และแบบเคมีใช้ neurotransmitter ผ่าน synaptic cleft</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="overview" data-search="วิวัฒนาการ ระบบประสาท CNS PNS organization information processing">
+      <div class="section-title">
+        <p>Part 1</p>
+        <h2>ภาพรวมระบบประสาท</h2>
+      </div>
+
+      <div class="card-stack">
+        <details class="note-card" open>
+          <summary>1) วิวัฒนาการของระบบประสาท</summary>
+          <div class="note-content">
+            <ul>
+              <li><b>Hydra</b>: ระบบประสาทแบบร่างแห หรือ nerve net กระจายทั่วตัว</li>
+              <li><b>Sea star</b>: มี radial nerve เชื่อมกับ nerve ring</li>
+              <li><b>Planarian</b>: เริ่มมีสมองเล็ก ๆ และเส้นประสาทแบบบันได หรือ ladder type</li>
+              <li><b>Annelid / Arthropod</b>: มีปมประสาท ganglia และ ventral nerve cord</li>
+              <li><b>Vertebrate</b>: พัฒนาเป็นสมองและไขสันหลังชัดเจน แบ่ง CNS และ PNS</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="note-card" open>
+          <summary>2) การจัดระบบประสาท Vertebrate</summary>
+          <div class="note-content two-col">
+            <div>
+              <h4>Central Nervous System (CNS)</h4>
+              <p>ประกอบด้วย <b>สมอง</b> และ <b>ไขสันหลัง</b> ทำหน้าที่รวมข้อมูล ประมวลผล และสั่งการตอบสนอง</p>
+            </div>
+            <div>
+              <h4>Peripheral Nervous System (PNS)</h4>
+              <p>เส้นประสาทสมอง เส้นประสาทไขสันหลัง และ ganglia นอก CNS ทำหน้าที่เป็นทางเข้า-ออกของข้อมูล</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="note-card" open>
+          <summary>3) Organization Chart ที่ควรจำ</summary>
+          <div class="note-content flow-chart">
+            <div class="flow-node main">Nervous System</div>
+            <div class="flow-row">
+              <div class="flow-node">CNS<br><small>Brain + Spinal cord</small></div>
+              <div class="flow-node">PNS<br><small>Nerves outside CNS</small></div>
+            </div>
+            <div class="flow-row">
+              <div class="flow-node">Afferent<br><small>รับข้อมูลเข้า CNS</small></div>
+              <div class="flow-node">Efferent<br><small>ส่งคำสั่งออกจาก CNS</small></div>
+            </div>
+            <div class="flow-row">
+              <div class="flow-node">Somatic<br><small>กล้ามเนื้อลาย</small></div>
+              <div class="flow-node">Autonomic<br><small>อวัยวะภายใน</small></div>
+            </div>
+            <p class="hint"><b>Autonomic</b> แบ่งเป็น sympathetic และ parasympathetic ควบคุมกล้ามเนื้อเรียบ กล้ามเนื้อหัวใจ ต่อม และเนื้อเยื่อบางชนิด</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="tissue" data-search="nervous tissue neuron soma dendrite axon glial neuroglia Schwann oligodendrocyte astrocyte microglia">
+      <div class="section-title">
+        <p>Cells</p>
+        <h2>เนื้อเยื่อประสาทและชนิดของเซลล์</h2>
+      </div>
+
+      <div class="grid-2">
+        <article class="glass-card">
+          <h3>Neuron = เซลล์ประสาท</h3>
+          <ul class="clean-list">
+            <li><b>Cell body / Soma</b>: ศูนย์กลางของเซลล์ มีนิวเคลียส</li>
+            <li><b>Dendrite</b>: รับสัญญาณเข้าสู่เซลล์</li>
+            <li><b>Axon</b>: ส่งสัญญาณออกไปยังเซลล์อื่น</li>
+            <li><b>Axon terminal / Bouton</b>: ปลายแอกซอน ใช้ส่งสัญญาณผ่าน synapse</li>
+          </ul>
+        </article>
+        <article class="glass-card">
+          <h3>แบ่งตามหน้าที่</h3>
+          <ul class="clean-list">
+            <li><b>Sensory neuron</b>: รับความรู้สึก/สิ่งเร้า ส่งเข้า CNS</li>
+            <li><b>Motor neuron</b>: ส่งคำสั่งจาก CNS ไปยังกล้ามเนื้อหรือต่อม</li>
+            <li><b>Association neuron</b>: ประสานงานระหว่าง neuron อยู่มากใน CNS</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="mini-table-wrap">
+        <table class="mini-table">
+          <thead>
+            <tr>
+              <th>ชนิด Neuron</th>
+              <th>ลักษณะจำง่าย</th>
+              <th>ตัวอย่าง/ตำแหน่งที่พบบ่อย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Anaxonic</td>
+              <td>มี process หลายแขนง แยก axon/dendrite ไม่ชัด</td>
+              <td>บางบริเวณของสมอง</td>
+            </tr>
+            <tr>
+              <td>Bipolar</td>
+              <td>มี 2 process ออกจาก cell body</td>
+              <td>อวัยวะรับความรู้สึก เช่น ตา/จมูก</td>
+            </tr>
+            <tr>
+              <td>Pseudounipolar</td>
+              <td>process เดียวแยกเป็น 2 แขนง</td>
+              <td>sensory ganglion</td>
+            </tr>
+            <tr>
+              <td>Multipolar</td>
+              <td>axon 1 เส้น dendrite หลายแขนง</td>
+              <td>motor neuron ส่วนใหญ่</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="glia-grid">
+        <article class="glia-card">
+          <span>CNS</span>
+          <h3>Ependymal cells</h3>
+          <p>บุโพรงสมองและคลองกลางไขสันหลัง ช่วยเกี่ยวกับน้ำหล่อเลี้ยงสมองและไขสันหลัง</p>
+        </article>
+        <article class="glia-card">
+          <span>CNS</span>
+          <h3>Astrocytes</h3>
+          <p>ช่วยค้ำจุน ควบคุมสภาพแวดล้อมของ neuron และเกี่ยวข้องกับ blood-brain barrier</p>
+        </article>
+        <article class="glia-card">
+          <span>CNS</span>
+          <h3>Oligodendrocytes</h3>
+          <p>สร้างปลอกไมอีลินให้ axon ในระบบประสาทส่วนกลาง</p>
+        </article>
+        <article class="glia-card">
+          <span>CNS</span>
+          <h3>Microglia</h3>
+          <p>เก็บกินเศษเซลล์และเชื้อโรค คล้ายเซลล์ภูมิคุ้มกันของ CNS</p>
+        </article>
+        <article class="glia-card pns">
+          <span>PNS</span>
+          <h3>Satellite cells</h3>
+          <p>ล้อมรอบ cell body ใน ganglia ช่วยควบคุมสภาพแวดล้อมรอบ neuron</p>
+        </article>
+        <article class="glia-card pns">
+          <span>PNS</span>
+          <h3>Schwann cells</h3>
+          <p>สร้างไมอีลินใน PNS และช่วยซ่อมแซม axon หลังบาดเจ็บ</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="potential" data-search="membrane potential resting membrane potential RMP sodium potassium pump ion channel Na K Cl protein">
+      <div class="section-title">
+        <p>Electric Signal</p>
+        <h2>Membrane Potential และ RMP</h2>
+      </div>
+
+      <div class="highlight-panel">
+        <div>
+          <p class="big-number">-70 mV</p>
+          <h3>Resting Membrane Potential</h3>
+          <p>คือศักย์ไฟฟ้าขณะพักของเยื่อหุ้มเซลล์ประสาท ภายในเซลล์มีประจุลบมากกว่าภายนอก เรียกว่าอยู่ในภาวะ polarization</p>
+        </div>
+        <div class="ion-card">
+          <h4>นอกเซลล์</h4>
+          <p><b>Na+</b> สูง และ <b>Cl-</b> สูง</p>
+          <h4>ในเซลล์</h4>
+          <p><b>K+</b> สูง และมีโปรตีนประจุลบ</p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <article class="step-card">
+          <span>01</span>
+          <h3>Transmembrane ionic gradient</h3>
+          <p>ความเข้มข้นของไอออนในและนอกเซลล์ไม่เท่ากัน ทำให้มีแรงผลักดันให้ไอออนเคลื่อนที่</p>
+        </article>
+        <article class="step-card">
+          <span>02</span>
+          <h3>Selective permeability</h3>
+          <p>เยื่อหุ้มเซลล์ยอมให้ไอออนแต่ละชนิดผ่านได้ไม่เท่ากัน K+ ผ่านได้ง่ายกว่า Na+ ในภาวะพัก</p>
+        </article>
+        <article class="step-card">
+          <span>03</span>
+          <h3>Na+ / K+ pump</h3>
+          <p>ใช้ ATP ปั๊ม <b>Na+ ออก 3 ตัว</b> และ <b>K+ เข้า 2 ตัว</b> ช่วยคง RMP</p>
+        </article>
+      </div>
+
+      <details class="note-card" open>
+        <summary>Ion channel ที่ต้องรู้</summary>
+        <div class="note-content">
+          <div class="tag-list">
+            <span>Non-gated K+ channel: เปิดตลอด K+ เข้าออกได้อิสระ</span>
+            <span>Non-gated Na+ channel: มีน้อย Na+ รั่วเข้าได้เล็กน้อย</span>
+            <span>Voltage-gated channel: เปิด/ปิดตามศักย์ไฟฟ้า</span>
+            <span>Ligand-gated channel: เปิด/ปิดเมื่อสารเคมีจับ receptor</span>
+            <span>Stretch-activated channel: เปิดเมื่อเยื่อหุ้มถูกยืด</span>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section class="section" id="ap" data-search="action potential threshold depolarization repolarization hyperpolarization refractory all or none saltatory local current flow">
+      <div class="section-title">
+        <p>Nerve Impulse</p>
+        <h2>Action Potential และการนำกระแสประสาท</h2>
+      </div>
+
+      <div class="ap-diagram" aria-label="ลำดับ Action Potential">
+        <div class="ap-step resting">
+          <b>1</b>
+          <h3>Resting</h3>
+          <p>ประมาณ -70 mV</p>
+        </div>
+        <div class="ap-step threshold">
+          <b>2</b>
+          <h3>Threshold</h3>
+          <p>ถึงระดับกระตุ้น</p>
+        </div>
+        <div class="ap-step depol">
+          <b>3</b>
+          <h3>Depolarization</h3>
+          <p>Na+ channel เปิด Na+ เข้า</p>
+        </div>
+        <div class="ap-step repol">
+          <b>4</b>
+          <h3>Repolarization</h3>
+          <p>K+ channel เปิด K+ ออก</p>
+        </div>
+        <div class="ap-step hyper">
+          <b>5</b>
+          <h3>Hyperpolarization</h3>
+          <p>ต่ำกว่า RMP ชั่วคราว</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <article class="glass-card">
+          <h3>คุณสมบัติที่ออกสอบบ่อย</h3>
+          <ul class="clean-list">
+            <li><b>Threshold potential</b>: ต้องกระตุ้นถึงจุดหนึ่งจึงเกิด AP</li>
+            <li><b>All-or-none response</b>: ถ้าถึง threshold จะเกิดเต็มที่ ไม่ใช่แรงขึ้นตามแรงกระตุ้น</li>
+            <li><b>Refractory period</b>: ช่วงที่เซลล์ไม่ตอบสนอง หรือตอบสนองยากขึ้น</li>
+            <li><b>Propagation</b>: การเคลื่อนที่ของ AP ไปตาม axon</li>
+          </ul>
+        </article>
+        <article class="glass-card">
+          <h3>Continuous vs Saltatory</h3>
+          <p><b>Continuous conduction</b> เกิดใน axon ที่ไม่มี myelin กระแสเดินต่อเนื่องจึงช้ากว่า</p>
+          <p><b>Saltatory conduction</b> เกิดใน axon มี myelin กระแสเหมือนกระโดดจาก node of Ranvier หนึ่งไปอีก node จึงเร็วกว่า</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="synapse" data-search="synapse electrical chemical gap junction synaptic cleft neuromuscular axosomatic axodendritic axoaxonic neurotransmitter">
+      <div class="section-title">
+        <p>Communication</p>
+        <h2>Synapse: จุดประสานประสาท</h2>
+      </div>
+
+      <div class="grid-2">
+        <article class="compare-card">
+          <h3>ตำแหน่งของ Synapse</h3>
+          <ul class="clean-list">
+            <li><b>Axosomatic synapse</b>: ปลาย axon สัมผัส cell body</li>
+            <li><b>Axodendritic synapse</b>: ปลาย axon สัมผัส dendrite</li>
+            <li><b>Axoaxonic synapse</b>: ปลาย axon สัมผัส axon อีกเซลล์</li>
+            <li><b>Neuromuscular synapse</b>: synapse ระหว่าง neuron กับกล้ามเนื้อ</li>
+          </ul>
+        </article>
+        <article class="compare-card accent">
+          <h3>Electrical vs Chemical Synapse</h3>
+          <div class="compare-row">
+            <b>Electrical</b>
+            <span>เซลล์เชื่อมกันด้วย gap junction กระแสผ่านตรงได้เร็ว</span>
+          </div>
+          <div class="compare-row">
+            <b>Chemical</b>
+            <span>มี synaptic cleft ต้องใช้ neurotransmitter ส่งสัญญาณ</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>1</span>
+          <p>Action potential มาถึง axon terminal</p>
+        </div>
+        <div class="timeline-item">
+          <span>2</span>
+          <p>Voltage-gated Ca2+ channel เปิด</p>
+        </div>
+        <div class="timeline-item">
+          <span>3</span>
+          <p>Ca2+ เข้าเซลล์และกระตุ้น vesicle</p>
+        </div>
+        <div class="timeline-item">
+          <span>4</span>
+          <p>Vesicle หลอมรวมกับเยื่อหุ้ม ปล่อย neurotransmitter</p>
+        </div>
+        <div class="timeline-item">
+          <span>5</span>
+          <p>สารสื่อประสาทแพร่ข้าม synaptic cleft ไปจับ receptor ฝั่ง postsynaptic</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="neurotransmitter" data-search="neurotransmitter acetylcholine dopamine norepinephrine serotonin glutamate GABA glycine EPSP IPSP botulinum toxin">
+      <div class="section-title">
+        <p>Chemical Signal</p>
+        <h2>สารสื่อประสาทที่ควรจำ</h2>
+      </div>
+
+      <div class="nt-grid">
+        <article class="nt-card">
+          <h3>Acetylcholine (ACh)</h3>
+          <p>เกี่ยวกับการเคลื่อนไหวของร่างกาย การเรียนรู้ ความจำ และการตื่นตัว</p>
+        </article>
+        <article class="nt-card">
+          <h3>Dopamine (DA)</h3>
+          <p>เกี่ยวกับการเคลื่อนไหว อารมณ์ สมาธิ การเรียนรู้ และ reward circuit</p>
+        </article>
+        <article class="nt-card">
+          <h3>Norepinephrine / Epinephrine</h3>
+          <p>เกี่ยวกับความตื่นตัวและการตอบสนองแบบ fight or flight</p>
+        </article>
+        <article class="nt-card">
+          <h3>Serotonin (5-HT)</h3>
+          <p>เกี่ยวข้องกับการหลับ-ตื่น ความเจ็บปวด และอารมณ์</p>
+        </article>
+        <article class="nt-card">
+          <h3>Glutamate / Aspartate</h3>
+          <p>เป็น excitatory neurotransmitter สำคัญใน CNS เกี่ยวกับการเรียนรู้และความจำ</p>
+        </article>
+        <article class="nt-card">
+          <h3>GABA / Glycine</h3>
+          <p>เป็น inhibitory neurotransmitter โดย GABA พบมากใน CNS ส่วน glycine เด่นในก้านสมองและไขสันหลัง</p>
+        </article>
+      </div>
+
+      <div class="grid-2">
+        <article class="glass-card">
+          <h3>EPSP vs IPSP</h3>
+          <p><b>EPSP</b> = Excitatory Post Synaptic Potential ทำให้ postsynaptic neuron มีแนวโน้มถูกกระตุ้นมากขึ้น เช่น Na+ เข้า</p>
+          <p><b>IPSP</b> = Inhibitory Post Synaptic Potential ทำให้ถูกกระตุ้นยากขึ้น เช่น K+ ออก</p>
+        </article>
+        <article class="glass-card danger">
+          <h3>Botulinum toxin</h3>
+          <p>พิษจากแบคทีเรีย <i>Clostridium botulinum</i> ยับยั้งการหลั่ง Acetylcholine ทำให้สัญญาณไปกล้ามเนื้อลดลง เกิดกล้ามเนื้ออ่อนแรง/อัมพาต และอาจกระทบการหายใจ</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="flashcards" data-search="flashcard บัตรคำ ทบทวน คำศัพท์">
+      <div class="section-title">
+        <p>Memory Tool</p>
+        <h2>บัตรคำทบทวนเร็ว</h2>
+      </div>
+      <div class="flashcard-box">
+        <button class="arrow-btn" id="prevFlash" type="button">‹</button>
+        <article class="flashcard" id="flashcard" tabindex="0">
+          <p class="flash-label">คลิกเพื่อดูคำตอบ</p>
+          <h3 id="flashQuestion">RMP คืออะไร?</h3>
+          <p id="flashAnswer">Resting membrane potential คือศักย์เยื่อเซลล์ขณะพัก ประมาณ -70 mV</p>
+        </article>
+        <button class="arrow-btn" id="nextFlash" type="button">›</button>
+      </div>
+      <p class="center-hint">คลิกการ์ดหรือกด Space เพื่อพลิกคำตอบ</p>
+    </section>
+
+    <section class="section" id="quiz" data-search="quiz แบบทดสอบ ข้อสอบ action potential synapse neurotransmitter">
+      <div class="section-title">
+        <p>Practice</p>
+        <h2>แบบทดสอบสั้น 10 ข้อ</h2>
+      </div>
+      <div class="quiz-card">
+        <div id="quizArea"></div>
+        <div class="quiz-actions">
+          <button class="primary-btn" id="checkQuizBtn" type="button">ตรวจคำตอบ</button>
+          <button class="secondary-btn" id="resetQuizBtn" type="button">ทำใหม่</button>
+        </div>
+        <div class="score-box" id="scoreBox" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ทำเป็นเว็บสรุปจากเอกสาร Neurophysiology ม.6 | ใช้งานได้แบบเปิดไฟล์ index.html</p>
+    <a href="#top">กลับขึ้นบน ↑</a>
+  </footer>
+
+  <button class="to-top" id="toTopBtn" type="button" aria-label="กลับขึ้นด้านบน">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
